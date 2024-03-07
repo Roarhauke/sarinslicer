@@ -4,9 +4,15 @@ if __name__ == '__main__':
 	print("get outta here") # i feel like im high on sarin
 	print("free cookies: https://youtu.be/dQw4w9WgXcQ") # wonder how many people i will rickroll
 else:
+	print("loadsettings module initializing")
 	class CSettings: # define CSettings class
-		x = 5 # junk, just for test
-	print("loadsettings module initializing") # report about initialization
-	def loadSetFromFile(file: str) -> CSettings: # define LSFF function
-		p1 = CSettings() # code that might be usefull
-		return p1 # --::--
+		def __init__ (self, volx, voly, volz, speed): # constructer
+			self.volx = volx
+			self.voly = voly
+			self.volz = volz
+			self.speed = speed
+	def loadSetFromFile(filename: str) -> CSettings: # define LSFF function
+		file = open(filename, "r") # load file
+		pars = json.loads(file.read()) # parse da file
+		setts = CSettings() # code that might be usefull
+		return setts # --::--
