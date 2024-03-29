@@ -6,3 +6,6 @@
 
 sarin is a gcode genarator for diffrent types of cnc
 
+currently still WIP (doesnt work yet)
+
+<img src="mascot.jpg" alt="mr. sarin, our mascot" width="200"/>
