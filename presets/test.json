@@ -3,5 +3,6 @@
     "volx":100,
     "voly":100,
     "volz":100,
-    "maxspeed":100
+    "maxspeed":250,
+    "prefspeed":180
 }
