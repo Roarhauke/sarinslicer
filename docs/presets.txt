@@ -1,0 +1,13 @@
+writing presets is currently quite simple.
+7 values are needed:
+    value name  usage
+    name        name
+    volx        volume x
+    voly        volume y
+    volz        volume z
+    maxspeed    max speed
+    prefspeed   preffered speed
+    startgcode  start gcode
+
+not much more to say.
+<><
