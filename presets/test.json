@@ -4,5 +4,6 @@
     "voly":100,
     "volz":100,
     "maxspeed":250,
-    "prefspeed":180
+    "prefspeed":180,
+    "startgcode":"g28"
 }

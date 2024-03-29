@@ -6,13 +6,14 @@ if __name__ == '__main__':
 else:
 	print("loadsettings module initializing")
 	class CSettings: # define CSettings=( CodeSettings ) class
-		def __init__ (self, name, volx, voly, volz, maxspeed, prefspeed): # constructer
+		def __init__ (self, name, volx, voly, volz, maxspeed, prefspeed, startgcode): # constructer
 			self.name = name
 			self.volx = volx
 			self.voly = voly
 			self.volz = volz
 			self.maxspeed = maxspeed
 			self.prefspeed = prefspeed
+			self.startgcode = startgcode
 	def loadSetFromFile(filename: str): # define LSFF function
 		try:
 			file = open(filename, "r") # load file
@@ -30,6 +31,7 @@ else:
 			volz = pars["volz"]
 			mspeed = pars["maxspeed"]
 			pspeed = pars["prefspeed"]
+			sgcode = pars["startgcode"]
 		except:
 			raise Exception("data missing")
 		setts = CSettings(name, volx, voly, volz, mspeed, pspeed) # code that might be usefull
