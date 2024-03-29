@@ -1,5 +1,5 @@
 
-![Logo](sarin.jpg)
+<img src="sarin.jpg" alt="logo" width="200"/>
 
 
 # Sarin
