@@ -13,6 +13,6 @@ else:
             else:
                 gline = gline + "g1"
                 extruder += x[1]
-            gline = gline + "x" + str(x[0][0]) + "y" + str(x[0][1]) + "z" + str(x[0][1]) + "e" + str(extruder)
+            gline = gline + " x" + str(x[0][0]) + " y" + str(x[0][1]) + " z" + str(x[0][1]) + " e" + str(extruder)
             gcode.append(gline)
         return gcode
